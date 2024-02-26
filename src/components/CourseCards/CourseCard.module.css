@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.card {
+  /* font-family: 'Poppins', sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 1.25rem;
+    position: relative;
+    border: 0.25rem solid rgb(236, 242, 254);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    height: inherit;
+    width: min(-1rem + 100vw, 22.5rem);
+    background: rgb(255, 255, 255);
+    border: 0.25rem solid rgb(236, 242, 254);
+    border-radius: 1.25rem;
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    grid-template-rows: auto;
+
+  }
+  
+  .imageWrapper {
+    border-radius: 1rem 1rem 0rem 0rem;
+    
+  }
+  
+  .backgroundImage {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-top-left-radius: 10px; /* Match the border-radius of the card */
+    border-top-right-radius: 10px; /* Match the border-radius of the card */
+  }
+
+  .courseInfo {
+    padding: 0.5rem 1rem;
+  }
+  
+  .tuitionInfo {
+    display: flex;
+    gap: 0.375rem;
+    flex-direction: row;
+    /* padding: 0rem 1rem; */
+    margin-bottom: 1.25rem;
+    margin-top: 0.75rem;
+  }
+
+  .tuitionInfo .infocard {
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    border: 0.0625rem solid rgb(238, 240, 241);
+    background: rgb(255, 255, 255);
+    width: 100%;
+  }
+  
+  .applyButton {
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+    background: rgb(32, 110, 244);
+    cursor: pointer;
+    transition: all 300ms ease 0s;
+    width: 100%;
+    border: 0;
+    margin-top: 1.5rem;
+  }
+  
+  .applyButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .logoWrapper {
+    position: absolute;
+    top: 3.7rem;
+    left: 1.7rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0rem 0.125rem 0.25rem 0.0625rem;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .logo {
+    width: 100%;
+  }
+
+  .svgIcon {
+    position: absolute;
+    top: 4.6rem;
+  }
+
+  .courseTitle {
+    padding-top: 25px;
+    color: rgb(35, 39, 42);
+    height: auto;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .university_name {
+    color: rgb(35, 39, 42);
+    font-size: 0.875rem;
+    width: 90%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
+
+
+  .course_tuition, .courseDuration {
+    color: rgb(35, 39, 42);
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 0.625rem;
+  }
+
+  .cardtext {
+    color: rgb(59, 59, 60);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 120%;
+    letter-spacing: 0.015rem;
+  }
+
+  .undergraduteScholershipTitle {
+    padding: 0.25rem 0rem;
+    color: rgb(12, 93, 233);
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 0.625rem;
+  }
+
+  .additionalScholarShip {
+    border-radius: 0.75rem;
+    background: rgb(80, 141, 246);
+    width: 0.15rem;
+    height: 100%;
+  }
+
+  .scholarship_promo {
+        margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(236, 242, 254);
+    padding: 0.5rem;
+    gap: 0.25rem;
+    cursor: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: flex !important;
+  }
+
+  .scholarship_name {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.25rem 0rem;
+    border-radius: 0.625rem;
+    color: rgb(59, 59, 60);
+    /* font-family: Manrope; */
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .securetext {
+    padding: 0.5rem 1rem 0.75rem;
+    color: rgb(59, 59, 60);
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.015rem;
+  }
+
+  .hourHighLight {
+    color: rgb(32, 110, 244);
+    font-family: Manrope;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    letter-spacing: 0.015rem;
+  }

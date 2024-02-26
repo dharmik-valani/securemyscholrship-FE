@@ -1,0 +1,35 @@
+.searchContainer {
+
+  }
+    
+    .searchInput {
+      min-width: 38.5rem;
+      width: 100%;
+      width: min(-1rem + 100vw, 22.5rem);
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: auto auto 1fr;
+      -webkit-box-align: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      border: 0.125rem solid rgb(240, 240, 240);
+      border-radius: 0.625rem;
+      padding: 0.85rem 1.5rem 0.75rem 0.75rem;
+      background: rgb(243, 245, 247);
+    }
+    
+    .searchInput:focus {
+      border-color: #007bff;
+    }
+
+    @media (max-width: 767px) { 
+      .searchInput {
+        width: min(-1rem + 100vw, 21rem)!important;
+        min-width: 15rem!important;
+      }
+      
+      .searchInput:focus {
+        border-color: #007bff;
+      }
+  
+    }
