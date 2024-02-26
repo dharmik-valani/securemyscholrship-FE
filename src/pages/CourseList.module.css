@@ -1,0 +1,9 @@
+.courseList {
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 2rem 2.75rem;
+    width: 100%;
+    background: rgb(229, 229, 229);
+}
